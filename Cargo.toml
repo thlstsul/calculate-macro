@@ -1,0 +1,16 @@
+[package]
+name = "calculate-macro"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Expand the bit number of the parameters in the calculation formula to obtain the result with the expected bit number."
+repository = "https://github.com/thlstsul/calculate-macro"
+keywords = ["calculate", "macro"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = { version = "1.0", features = ["full", "derive", "extra-traits"] }
